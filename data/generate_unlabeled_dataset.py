@@ -5,7 +5,10 @@ import re
 import json
 import logging
 
-search_url = "https://api.github.com/search/repositories?q=language:gdscript license:mit+pushed:<{before_date}&per_page=100&page={page}&sort=updated"
+##search_url = "https://api.github.com/search/repositories?q=language:gdscript license:mit+pushed:<{before_date}&per_page=100&page={page}&sort=updated"
+
+search_url = "https://api.github.com/search/repositories?q=language:gdscript <{before_date}&per_page=100&page={page}&sort=updated"
+
 
 total_count_3x = 0
 total_count_4x = 0
